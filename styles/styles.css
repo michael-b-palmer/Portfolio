@@ -5,15 +5,16 @@ h1 {
     border-color: black;
 }
 p.important {
-    width: 75%;
+    width: fit-content;
 }
 
 p {
     color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
-    background-color: dodgerblue;
+    background-color: darkblue;
 }
 
 .purple-text {
@@ -34,9 +35,9 @@ body {
 }
 
 a {
-    background-color: aliceblue;
+    background-color: rebeccapurple;
 }
-a[href="https://www.britannica.com/animal/cat"] {
+a[href="https://uxfol.io/p/michaelbpalmer/042b8ab9"] {
     background-color: azure;
 }
 a[href="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb_square.jpg?w=170&h=170"] {
@@ -49,4 +50,18 @@ img {
     border-width: 1rem;
     width: 25%;
     margin-top: 5rem;
+}
+.taco {
+    border-style: groove;
+    width: 50%;
+    border-color: rgb(164, 105, 32);
+    border-radius: 20%;
+    margin-bottom: 24px;
+}
+.ugly {
+    padding: 16px;
+    background-color: lightcoral;
+    border-style: dotted;
+    margin-left: 64px;
+    width: fit-content;
 }
