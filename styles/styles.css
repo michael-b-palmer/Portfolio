@@ -1,0 +1,52 @@
+h1 {
+    color: blue;
+    border-style: solid;
+    border-width: 20px;
+    border-color: black;
+}
+p.important {
+    width: 75%;
+}
+
+p {
+    color: red;
+}
+
+body {
+    background-color: dodgerblue;
+}
+
+.purple-text {
+    color: purple;
+}
+
+.important {
+    font-weight: bold;
+}
+
+.important:hover {
+    background-color: cornsilk;
+}
+
+#lead-paragraph {
+    color: aqua;
+    font-weight: bold;
+}
+
+a {
+    background-color: aliceblue;
+}
+a[href="https://www.britannica.com/animal/cat"] {
+    background-color: azure;
+}
+a[href="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb_square.jpg?w=170&h=170"] {
+    background-color: palegoldenrod;
+    padding: 1rem;
+}
+img {
+    border-style: dashed;
+    border-color: antiquewhite;
+    border-width: 1rem;
+    width: 25%;
+    margin-top: 5rem;
+}
