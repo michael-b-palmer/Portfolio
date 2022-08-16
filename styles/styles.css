@@ -1,4 +1,6 @@
 h1 {
+    position: relative;
+    right: 30px;
     color: blue;
     border-style: solid;
     border-width: 20px;
