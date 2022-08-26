@@ -11,23 +11,21 @@
 
 body {
     background: #f1f5ff;
-    overflow: hidden;
+    overflow: auto;
     height: 100vh;
 }
+
 main {
     overflow-y: auto;
     display: flex;
-    }
-.wrapper_inner {
-   flex: 1 0 auto;
 }
+
 /* Left nav / profile pic */
-nav .wrapper .sidebar {
-    min-height: 99vh;
-}
+
 .wrapper .sidebar {
     background: #005ec0;
     display: flex;
+    height: 100%;
     flex-direction: column;
     width: 225px;
     margin: 5px;
@@ -39,7 +37,7 @@ nav .wrapper .sidebar {
 .wrapper .sidebar .profile {
     text-align: center;
     margin-bottom: 30px;
-    
+
 }
 
 .wrapper .sidebar .profile img {
@@ -93,7 +91,8 @@ nav .wrapper .sidebar {
 .wrapper .sidebar ul li a.active:before {
     display: block;
 }
+
 .wrapper_inner {
     width: 90%;
     margin: 0px auto;
-  }
+}
