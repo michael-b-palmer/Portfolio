@@ -17,7 +17,6 @@ body {
 main {
     overflow-y: auto;
     display: flex;
-    flex-direction: row;
     }
 .wrapper_inner {
    flex: 1 0 auto;
