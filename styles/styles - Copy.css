@@ -10,26 +10,37 @@
 }
 
 body {
-    background: #84A98C;
+    background: #f1f5ff;
+    overflow: hidden;
+    height: 100vh;
 }
-
+main {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    }
+.wrapper_inner {
+   flex: 1 0 auto;
+}
+/* Left nav / profile pic */
+nav .wrapper .sidebar {
+    min-height: 99vh;
+}
 .wrapper .sidebar {
-    background: #52796F;
-    position: fixed;
-    top: 5px;
-    left: 5px;
+    background: #005ec0;
+    display: flex;
+    flex-direction: column;
     width: 225px;
-    height: 99%;
+    margin: 5px;
     padding: 20px 0;
-    transition: all 0.5s ease;
     border-radius: 10px;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
 .wrapper .sidebar .profile {
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 .wrapper .sidebar .profile img {
@@ -46,40 +57,44 @@ body {
 }
 
 .wrapper .sidebar .profile p {
-    color: rgb(206, 240, 253);
+    color: #ffffff;
     font-size: 14px;
+}
+
+.wrapper .sidebar ul {
+    flex: 1 0 10%;
 }
 
 .wrapper .sidebar ul li a {
     display: block;
     padding: 13px 30px;
-    border-bottom: 1px solid #6D8A96;
-    color: rgb(241, 237, 237);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     position: relative;
 }
 
 .wrapper .sidebar ul li a .icon {
-    color: #dee4ec;
+    color: #ffffff;
     width: 30px;
     display: inline-block;
 }
 
-
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active {
-    color: #52796F;
-
-    background: #95D9DA;
-    border-right: 2px solid #6D8A96;
+    color: #001968;
+    background: #a3c3ff;
 }
 
 .wrapper .sidebar ul li a:hover .icon,
 .wrapper .sidebar ul li a.active .icon {
-    color: #52796F;
+    color: #001968;
 }
 
 .wrapper .sidebar ul li a:hover:before,
 .wrapper .sidebar ul li a.active:before {
     display: block;
 }
+.wrapper_inner {
+    width: 90%;
+    margin: 0px auto;
+  }
