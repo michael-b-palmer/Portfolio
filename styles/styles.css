@@ -12,18 +12,18 @@
 body {
     background: #dddfe7;
     overflow: auto;
-    height: 100vh;
+    min-height: 100%;
 }
 
 main {
-    overflow-y: auto;
     display: flex;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 article {
@@ -33,8 +33,21 @@ article {
     padding-top: 5rem;
 }
 
+#left {
+    max-width: fit-content;
+    padding-right: 3rem;
+}
+
+#left p {
+    max-width: 600px;
+}
+
 h1 {
     padding-bottom: 3rem;
+}
+
+#right {
+    padding-top: 20rem;
 }
 
 figure {
@@ -46,13 +59,14 @@ figcaption {
     font-size: .7rem;
 }
 
+
 /* Left nav / profile pic */
 
 .wrapper .sidebar {
     background: #005ec0;
     width: 225px;
     height: 100%;
-    padding: 20px 0;
+    padding: 20px 0px;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -102,6 +116,7 @@ figcaption {
 .wrapper .sidebar ul li a.active {
     color: #001968;
     background: #a3c3ff;
+    transition: all 0.5s ease-out;
 }
 
 .wrapper .sidebar ul li a:hover .icon,
@@ -117,4 +132,49 @@ figcaption {
 .wrapper_inner {
     width: 90%;
     margin: 0px auto;
+}
+
+.sweet-table {
+    border-collapse:collapse;
+    margin: 25px 0;
+    font-size: 0.7em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.sweet-table:hover {
+    transform: scale(1.1);
+}
+
+.sweet-table thead tr {
+    background-color: #005ec0;
+    color: #ffffff;
+    text-align: left;
+}
+
+.sweet-table th,
+.sweet-table td {
+    padding: 12px 15px;
+}
+
+
+.sweet-table tbody tr:nth-of-type(even) {
+    background-color: #a3c3ff;
+}
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 10px;
 }
